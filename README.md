@@ -6,3 +6,8 @@ Create an application that edits audio.
 - It could be tonal, atonal, rhythmic, or other.
 
 Ideas:
+- take song and transpose into different song
+- pick song, based on it it changes mood and icon
+- game to teach you how to play drums, picks up on beat from uploaded song and you have to match
+- stripped version of instrument, click piece and play sound
+- click and drag game to make a song from segments, hover over pieces to hear audio
