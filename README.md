@@ -1,1 +1,8 @@
 # NMDE401-Sprint2-Group6
+Prompt:
+Create an application that edits audio.
+- Provide a method for the user to begin, end, and restart the ecperience.
+- Source could be pre-recorded, live, or a combination.
+- It could be tonal, atonal, rhythmic, or other.
+
+Ideas:
