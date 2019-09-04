@@ -77,7 +77,6 @@ body {
 }
  
 /* Individually coloured cards */
- 
 #card1.correct { background: red; }
 #card2.correct { background: brown; }
 #card3.correct { background: orange; }
