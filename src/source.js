@@ -48,7 +48,7 @@
       // on top of the slot, and prevent it being dragged
       // again
     
-      if ( slotNumber == cardNumber ) {
+      if ( slotNumber === cardNumber ) {
         ui.draggable.addClass( 'correct' );
         ui.draggable.draggable( 'disable' );
         $(this).droppable( 'disable' );
@@ -60,7 +60,7 @@
       // If all the cards have been placed correctly then display a message
       // and reset the cards for another go
     
-      if ( correctCards == 4 ) {
+      if ( correctCards === 4 ) {
         $('#successMessage').show();
         $('#successMessage').animate( {
           left: '380px',
