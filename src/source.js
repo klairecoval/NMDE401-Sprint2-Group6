@@ -18,9 +18,9 @@
       $('#cardSlots').html( '' );
     
       // Create the pile of shuffled cards
-      var numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];    
-      for ( var i=0; i<10; i++ ) {
-        $('<div><br></div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
+      var numbers = [ 1, 2, 3, 4];    
+      for ( var i=0; i<4; i++ ) {
+        $('<div><br><br></div>').data( 'number', numbers[i] ).attr( 'id', 'card'+numbers[i] ).appendTo( '#cardPile' ).draggable( {
           
           stack: '#cardPile div',
           cursor: 'move',
@@ -29,8 +29,8 @@
       }
     
       // Create the card slots
-      for ( var i=1; i<=10; i++ ) {
-        $('<div><br></div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
+      for ( var i=1; i<=4; i++ ) {
+        $('<div><br><br></div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
           accept: '#cardPile div',
           hoverClass: 'hovered',
           drop: handleCardDrop
@@ -60,7 +60,7 @@
       // If all the cards have been placed correctly then display a message
       // and reset the cards for another go
     
-      if ( correctCards == 10 ) {
+      if ( correctCards == 4 ) {
         $('#successMessage').show();
         $('#successMessage').animate( {
           left: '380px',
