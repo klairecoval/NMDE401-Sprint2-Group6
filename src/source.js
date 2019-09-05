@@ -1,6 +1,18 @@
 var correctCards = 0;
 $( init );
 
+function startGame() {
+  $('#startMessage').hide();
+  $('#successMessage').css( {
+    left: '580px',
+    top: '250px',
+    width: 0,
+    height: 0
+  } );
+
+  init();
+}
+
 function init() {
   // Hide the success message
   $('#successMessage').hide();

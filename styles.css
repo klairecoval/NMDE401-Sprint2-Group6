@@ -84,7 +84,7 @@ body {
  
  
 /* "You did it!" message */
-#successMessage {
+#successMessage, #startMessage {
   position: absolute;
   left: 580px;
   top: 250px;
@@ -97,4 +97,12 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   padding: 20px;
+}
+
+#startMessage {
+  left: 380px;
+  top: 200px;
+  width: 400px;
+  height: 100px;
+  opacity: 1;
 }
