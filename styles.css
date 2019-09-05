@@ -89,9 +89,6 @@ body {
   z-index: 100;
   background: #784C32;
   color: #EDE0D4;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
   padding: 20px;
 }
 
