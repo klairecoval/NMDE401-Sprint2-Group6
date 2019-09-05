@@ -2,12 +2,23 @@ body {
   margin: 30px;
   line-height: 1.8em;
   font-family: 'Cousine', monospace;
+  background-image: url('assets/background.png');
+}
+
+#songName {
+  text-align: center;
+  color: #FFF;
+  margin-top: 4rem;
+}
+
+.darkerText {
+  color: #000;
 }
  
 /* Main content area */
  
 #content {
-  margin: 80px 70px;
+  margin: 65px 300px;
   text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -27,27 +38,32 @@ body {
  
 #cardPile {
   margin: 0 auto;
-  background: #938F97;
   float: left;
 }
  
 #cardSlots, #cardPile {
-  width: 47%;
-  height: 80%;
+  width: 410px;
+  height: 395px;
   padding: .85em;
+}
+
+#cardPile {
+  width: 475px;
+}
+
+#cardPile {
+  padding: 0;
 }
  
 /* Individual cards and slots */
  
 #cardSlots div, #cardPile div {
   float: left;
-  width: 5rem;
-  height: 8rem;
-  padding: .85em;
-  padding-top: 40px;
+  width: 100px;
+  height: 130px;
   padding-bottom: 0;
-  border: 2px solid #655F67;
-  margin: 10px 0 0 10px;
+  border: 1px solid #655F67;
+  margin: 0px 0px 10px 8px;
   background: #EDE0D4;
 }
  
@@ -55,15 +71,12 @@ body {
   background: #aaa;
 }
  
-#cardSlots div {
-  border-style: dashed;
-}
- 
 #cardPile div {
   background: #EDE0D4;
-  font-size: 1em;
-  text-shadow: 0 0 3px #000;
-  text-align: center;
+}
+
+#cardSlots div {
+  margin: 0;
 }
  
 #cardPile div.ui-draggable-dragging {
