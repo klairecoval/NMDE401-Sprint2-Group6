@@ -3,12 +3,6 @@ $( init );
 
 function startGame() {
   $('#startMessage').hide();
-  $('#successMessage').css( {
-    left: '580px',
-    top: '250px',
-    width: 0,
-    height: 0
-  } );
 
   init();
 }
@@ -16,12 +10,6 @@ function startGame() {
 function init() {
   // Hide the success message
   $('#successMessage').hide();
-  $('#successMessage').css( {
-    left: '580px',
-    top: '250px',
-    width: 0,
-    height: 0
-  } );
 
   // Reset the game
   correctCards = 0;
@@ -34,8 +22,8 @@ function init() {
   }
 
   // Create the pile of shuffled cards
-  var numbers = [ 1, 2, 3, 4]; 
-  for ( var i=0; i<4; i++ ) {
+  var numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; 
+  for ( var i=0; i<12; i++ ) {
     $('<div><br><br></div>')
       .data( 'number', numbers[i] )
       .attr( 'id', 'card'+numbers[i] )
@@ -47,12 +35,13 @@ function init() {
       } );
   }
 
+  // Play audio on Card 1
   $("#card1").mouseover(function() {
     $("#audioID")[0].play();
   })
 
   // Create the card slots
-  for ( var i=1; i<=4; i++ ) {
+  for ( var i=1; i<=12; i++ ) {
     $('<div><br><br></div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
@@ -80,14 +69,7 @@ function handleCardDrop( event, ui ) {
   
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
-  if ( correctCards === 4 ) {
+  if ( correctCards === 12 ) {
     $('#successMessage').show();
-    $('#successMessage').animate( {
-      left: '380px',
-      top: '200px',
-      width: '400px',
-      height: '100px',
-      opacity: 1
-    } );
   }
 }

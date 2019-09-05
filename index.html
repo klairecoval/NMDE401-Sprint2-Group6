@@ -5,31 +5,33 @@
         <title>Sprint 2</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
         <script type="text/javascript" src="src/source.js"></script>
     </head>
     <body>
-        <div id="content">
-            <div id="startMessage">
-                <h2>Welcome to [Game Name]</h2>
-                <button onclick="startGame()">Start</button>
-            </div>
+        <div id="startMessage">
+            <h2>Welcome to [Game Name]</h2>
+            <button onclick="startGame()">Start</button>
+        </div>
 
+        <div id="content">
             <div id="cardPile"> </div>
             <div id="cardSlots"> </div>
-            
-            <div id="successMessage">
-                <h2>Congratulations!</h2>
-                <button onclick="init()">Play Again</button>
-                <button>Next Level</button>
-            </div>
         </div>
+
+        <div id="successMessage">
+            <h2>Congratulations!</h2>
+            <button onclick="init()">Play Again</button>
+            <button>Next Level</button>
+        </div>
+        
         <audio id="audioID">
             <source src="http://iss240.net/tempfiles/menu-click/1.ogg" type="audio/ogg">
             <source src="http://iss240.net/tempfiles/menu-click/1.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+            Your browser does not support the audio element.
+        </audio>
     </body>
 </html>

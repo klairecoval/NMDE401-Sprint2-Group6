@@ -1,6 +1,7 @@
 body {
   margin: 30px;
   line-height: 1.8em;
+  font-family: 'Cousine', monospace;
 }
  
 /* Main content area */
@@ -11,6 +12,7 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  position: relative;
 }
  
 /* Slots for final card positions */
@@ -33,24 +35,18 @@ body {
   width: 47%;
   height: 80%;
   padding: .85em;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
  
 /* Individual cards and slots */
  
 #cardSlots div, #cardPile div {
   float: left;
-  width: 43%;
-  height: 18%;
+  width: 7rem;
+  height: 8rem;
   padding: .85em;
   padding-top: 40px;
   padding-bottom: 0;
   border: 2px solid #655F67;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
   margin: 10px 0 0 10px;
   background: #EDE0D4;
 }
@@ -84,10 +80,10 @@ body {
  
  
 /* "You did it!" message */
-#successMessage, #startMessage {
+#startMessage, #successMessage {
   position: absolute;
-  left: 580px;
-  top: 250px;
+  left: 0px;
+  top: 0px;
   width: 0;
   height: 0;
   z-index: 100;
@@ -99,10 +95,10 @@ body {
   padding: 20px;
 }
 
-#startMessage {
-  left: 380px;
-  top: 200px;
-  width: 400px;
-  height: 100px;
+#startMessage, #successMessage {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
   opacity: 1;
 }
