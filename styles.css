@@ -30,7 +30,7 @@ body {
  
 #cardSlots {
   margin: 0 auto 3em auto;
-  background: #E49F5B;
+  background-image: linear-gradient(#FFAA46, #CC51EB);
   float: right;
 }
  
@@ -62,17 +62,17 @@ body {
   width: 100px;
   height: 130px;
   padding-bottom: 0;
-  border: 1px solid #655F67;
   margin: 0px 0px 10px 8px;
   background: #EDE0D4;
+}
+
+#cardSlots div {
+  background: #282828;
+  border: 0.5px dashed #B5B5B5;
 }
  
 #cardSlots div.hovered {
   background: #aaa;
-}
- 
-#cardPile div {
-  background: #EDE0D4;
 }
 
 #cardSlots div {
