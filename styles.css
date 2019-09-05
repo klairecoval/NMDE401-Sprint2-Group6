@@ -94,7 +94,7 @@ body {
  
  
 /* "You did it!" message */
-#startMessage, #successMessage {
+#startMessage, #successMessage, #failMessage {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -106,7 +106,7 @@ body {
   padding: 20px;
 }
 
-#startMessage, #successMessage {
+#startMessage, #successMessage, #failMessage {
   left: 0px;
   top: 0px;
   width: 100%;
