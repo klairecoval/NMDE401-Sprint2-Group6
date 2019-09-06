@@ -111,9 +111,14 @@ body {
   width: 0;
   height: 0;
   z-index: 100;
-  background: #784C32;
   color: #EDE0D4;
   padding: 20px;
+}
+
+#successMessage {
+  background-image: url('assets/win-lose-bg.png');
+  margin: 0 auto;
+  text-align: center;
 }
 
 #startMessage, #successMessage, #failMessage {

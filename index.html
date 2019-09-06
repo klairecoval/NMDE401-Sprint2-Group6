@@ -26,14 +26,16 @@
         </div>
 
         <div id="successMessage">
-            <h2>Congratulations!</h2>
-            <button onclick="init()">Play Again</button>
-            <button>Next Level</button>
+            <div id="sucessText">
+                <h1>WINNER</h1>
+                <button onclick="init()">play again</button>
+                <button>level up</button>
+            </div>
         </div>
 
         <div id="failMessage">
-            <h2>You failed</h2>
-            <button onclick="location.reload()">Play Again</button>
+            <h1>You're not the music master today. Try again!</h1>
+            <button onclick="location.reload()">play again</button>
         </div>
 
         <audio id="audioID">
