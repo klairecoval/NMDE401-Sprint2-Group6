@@ -5,6 +5,17 @@ body {
   background-image: url('assets/background.png');
 }
 
+button {
+  font-family: 'Cousine', monospace;
+  width: 180px;
+  height: 45px;
+  border-radius: 6px;
+  color: #FFF;
+  background: rgba(34, 26, 132, 0.6);
+  border: none;
+  font-size: 20px;
+}
+
 #songName {
   text-align: center;
   color: #FFF;
@@ -12,7 +23,7 @@ body {
 }
 
 .darkerText {
-  color: #000;
+  color: #282828;
 }
  
 /* Main content area */
@@ -119,6 +130,15 @@ body {
   background-image: url('assets/win-lose-bg.png');
   margin: 0 auto;
   text-align: center;
+  color: #BBC6FF;
+}
+
+#successText {
+  margin-top: 10rem;
+}
+
+h1 {
+  -webkit-text-stroke: 1px black;
 }
 
 #startMessage, #successMessage, #failMessage {
