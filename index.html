@@ -13,8 +13,12 @@
     </head>
     <body>
         <div id="startMessage">
-            <h2>Welcome to [Game Name]</h2>
-            <button onclick="startGame()">Start</button>
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/musicEmitting.mp4" type="video/mp4">
+            </video>
+            
+            <img src="assets/title-img.png">
+            <button id="start-button" onclick="startGame()"><img src="assets/start-button.png"></button>
         </div>
 
         <h2 id="songName">How well do you know <span class="darkerText">Day n Night</span> by <span class="darkerText">Kid Cudi</span>?</h2>
