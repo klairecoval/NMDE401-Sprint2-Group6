@@ -1,5 +1,6 @@
 var correctCards = 0;
 $( init );
+var timer2 = "01:00";
 
 function startGame() {
   $('#startMessage').hide();
@@ -9,17 +10,15 @@ function startGame() {
 function init() {
   // Hide the success message
   $('#successMessage').hide();
+  $("#audioFull")[0].pause();
   $('#failMessage').hide();
+  timer2 = "01:00";
 
   // Reset the game
   correctCards = 0;
   $('#cardPile').html( '' );
   $('#cardSlots').html( '' );
   
-  var audio1 = document.getElementById("audioID");   
-  function playAudio() {
-    audio1.play();
-  }
 
   // Create the pile of shuffled cards
   var numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; 
@@ -41,9 +40,80 @@ function init() {
     cardPile.appendChild(cardPile.children[Math.random() * i | 0]);
   }
 
-  // Play audio on Card 1
+  // Play audio on Cards
   $("#card1").mouseover(function() {
-    $("#audioID")[0].play();
+    $("#audio1")[0].play();
+  })
+  $("#card2").mouseover(function() {
+    $("#audio2")[0].play();
+  })
+  $("#card3").mouseover(function() {
+    $("#audio3")[0].play();
+  })
+  $("#card4").mouseover(function() {
+    $("#audio4")[0].play();
+  })
+  $("#card5").mouseover(function() {
+    $("#audio5")[0].play();
+  })
+  $("#card6").mouseover(function() {
+    $("#audio6")[0].play();
+  })
+  $("#card7").mouseover(function() {
+    $("#audio7")[0].play();
+  })
+  $("#card8").mouseover(function() {
+    $("#audio8")[0].play();
+  })
+  $("#card9").mouseover(function() {
+    $("#audio9")[0].play();
+  })
+  $("#card10").mouseover(function() {
+    $("#audio10")[0].play();
+  })
+  $("#card11").mouseover(function() {
+    $("#audio11")[0].play();
+  })
+  $("#card12").mouseover(function() {
+    $("#audio12")[0].play();
+  })
+
+  // Pause audio on Cards
+  $("#card1").mouseout(function() {
+    $("#audio1")[0].pause();
+  })
+  $("#card2").mouseout(function() {
+    $("#audio2")[0].pause();
+  })
+  $("#card3").mouseout(function() {
+    $("#audio3")[0].pause();
+  })
+  $("#card4").mouseout(function() {
+    $("#audio4")[0].pause();
+  })
+  $("#card5").mouseout(function() {
+    $("#audio5")[0].pause();
+  })
+  $("#card6").mouseout(function() {
+    $("#audio6")[0].pause();
+  })
+  $("#card7").mouseout(function() {
+    $("#audio7")[0].pause();
+  })
+  $("#card8").mouseout(function() {
+    $("#audio8")[0].pause();
+  })
+  $("#card9").mouseout(function() {
+    $("#audio9")[0].pause();
+  })
+  $("#card10").mouseout(function() {
+    $("#audio10")[0].pause();
+  })
+  $("#card11").mouseout(function() {
+    $("#audio11")[0].pause();
+  })
+  $("#card12").mouseout(function() {
+    $("#audio12")[0].pause();
   })
 
   // Create the card slots
@@ -74,13 +144,13 @@ function handleCardDrop( event, ui ) {
   
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
-  if ( correctCards === 12 ) {
+  if ( correctCards === 1 ) {
     $('#successMessage').show();
+    $("#audioFull")[0].play();
   }
 }
 
 // Calculate countdown
-var timer2 = "01:00";
 var interval = setInterval(function() {
   var timer = timer2.split(':');
   var minutes = parseInt(timer[0], 10);
