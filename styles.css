@@ -149,20 +149,28 @@ button {
   padding: 20px;
 }
 
-#successMessage {
+#successMessage, #failMessage {
   background-image: url('assets/win-lose-bg.png');
   margin: 0 auto;
   text-align: center;
   color: #BBC6FF;
+  font-size: 20px;
 }
 
-#successText {
+.winLoseText {
+  display: block;
   margin-top: 10rem;
+  /* -webkit-text-stroke: 1px #FF6600; */
+  text-shadow:
+  0px 0 0 #FF6600,
+  0px 0px 0 #FF6600,
+  3px 2px 0 #FF6600,
+  1px 2px 0 #FF6600;
 }
-
+/* 
 h1 {
   -webkit-text-stroke: 1px black;
-}
+} */
 
 #startMessage, #successMessage, #failMessage {
   left: 0px;
