@@ -26,8 +26,8 @@
         </div>
 
         <div id="successMessage">
-            <div id="successText">
-                <h1>WINNER</h1>
+            <div class="winLoseText">
+                <h1 style="font-size:90px">WINNER</h1>
                 <img src="assets/GIF.gif" style="width:22rem">
                 <br>
                 <button onclick="init()">play again</button>
@@ -36,8 +36,12 @@
         </div>
 
         <div id="failMessage">
-            <h1>You're not the music master today. Try again!</h1>
-            <button onclick="location.reload()">play again</button>
+            <div class="winLoseText">
+                <img src="assets/lose.png" style="width:22rem">
+                <h1>You're not the music master today. Try again!</h1>
+                <br>
+                <button onclick="location.reload()">play again</button>
+            </div>
         </div>
 
         <audio id="audioID">
