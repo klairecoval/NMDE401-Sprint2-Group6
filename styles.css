@@ -167,10 +167,6 @@ button {
   3px 2px 0 #FF6600,
   1px 2px 0 #FF6600;
 }
-/* 
-h1 {
-  -webkit-text-stroke: 1px black;
-} */
 
 #startMessage, #successMessage, #failMessage {
   left: 0px;
