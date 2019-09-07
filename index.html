@@ -25,6 +25,7 @@
 
         <div id="content">
             <div id="cardPile"> </div>
+            <div class="countdown"></div>
             <div id="cardSlots"> </div>
         </div>
 
@@ -32,6 +33,11 @@
             <h2>Congratulations!</h2>
             <button onclick="init()">Play Again</button>
             <button>Next Level</button>
+        </div>
+
+        <div id="failMessage">
+            <h2>You failed</h2>
+            <button onclick="location.reload()">Play Again</button>
         </div>
 
         <audio id="audioID">

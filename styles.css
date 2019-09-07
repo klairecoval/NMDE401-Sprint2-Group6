@@ -18,19 +18,34 @@ body {
 /* Main content area */
  
 #content {
-  margin: 65px 300px;
+  margin: 130px 300px;
   text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
   position: relative;
 }
- 
+
+.countdown {
+	background: #FFAA46;
+	width: 12rem;
+	height: 2rem;
+	margin-top: -3.25rem;
+	float: right;
+	margin-right: 7.5rem;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	font-size: 2rem;
+	font-weight: 700;
+	padding-top: 1.25rem;
+}
+	
+
 /* Slots for final card positions */
  
 #cardSlots {
   margin: 0 auto 3em auto;
-  background: #E49F5B;
+  background-image: linear-gradient(#FFAA46, #CC51EB);
   float: right;
 }
  
@@ -62,17 +77,21 @@ body {
   width: 100px;
   height: 130px;
   padding-bottom: 0;
-  border: 1px solid #655F67;
-  margin: 0px 0px 10px 8px;
+  margin: 0px 0px 12px 8px;
   background: #EDE0D4;
 }
- 
-#cardSlots div.hovered {
-  background: #aaa;
+
+#cardSlots div {
+  background: #282828;
+  border: 0.5px dashed #B5B5B5;
 }
  
 #cardPile .card {
   background: #EDE0D4;
+}
+
+#cardSlots div.hovered {
+  background: #0F0F0F;
 }
 
 #cardSlots div {
@@ -105,17 +124,10 @@ body {
 .card:hover .overlay {
   width: 100%;
   transition: width 4s linear;
-}
-
-/* Individually coloured cards */
-#card1.correct { background: red; }
-#card2.correct { background: brown; }
-#card3.correct { background: orange; }
-#card4.correct { background: yellow; }
- 
+} 
  
 /* "You did it!" message */
-#startMessage, #successMessage {
+#startMessage, #successMessage, #failMessage {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -127,7 +139,7 @@ body {
   padding: 20px;
 }
 
-#startMessage, #successMessage {
+#startMessage, #successMessage, #failMessage {
   left: 0px;
   top: 0px;
   width: 100vw;
