@@ -124,6 +124,8 @@ button:hover {
  
 .card img{
   width: 100%;
+}
+.card:not(.correct) img{
   filter: contrast(10%) blur(3px) hue-rotate(80deg) 
 }
 
