@@ -97,9 +97,16 @@ button:hover {
   background: #EDE0D4;
 }
 
+#cardslots {
+  position: relative;
+  display: block;
+  z-index: 200
+}
+
 #cardSlots div {
   background: #282828;
   border: 0.5px dashed #B5B5B5;
+  z-index: 201;
 }
  
 #cardPile .card {
@@ -124,6 +131,8 @@ button:hover {
  
 .card img{
   width: 100%;
+}
+.card:not(.correct) img{
   filter: contrast(10%) blur(3px) hue-rotate(80deg) 
 }
 
